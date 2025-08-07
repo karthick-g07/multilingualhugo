@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+  <nav>
+    <ul>
+      
+        <li>
+          <a href="/en/about/">
+            About
+          </a>
+          
+        </li>
+      
+        <li>
+          <a href="/en/blog/">
+            &#x2b05;&#xfe0f;blog&#x1f449;
+          </a>
+          
+            <ul>
+              
+                <li>
+                  <a href="/en/blog/post1/">
+                    Post 1
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="/en/blog/post2/">
+                    Post 2
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+      
+        <li>
+          <a href="/en/duration/">
+            Duration
+          </a>
+          
+        </li>
+      
+    </ul>
+  </nav>
+  <li>
+
+            <select  class="notranslate" transalte="no" id="select-language" onchange="window.location = this.value;">
+              
+              
+              
+              
+              
+              
+
+              
+              <p>/en/duration/</p>
+              <option id="en" value="/en/duration/" selected>English
+              </option>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+               <p> hellow rold /de/duration/</p>
+              <option id="de" value="/de/duration/">German</option>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+               <p> hellow rold /fr/duration/</p>
+              <option id="fr" value="/fr/duration/">Français</option>
+              
+              
+              
+              
+            </select>
+            </li>
+  <hr>
+</header>
+    <main>
+        
+<h1 id="abs">Abs</h1>
+<p>Returns the absolute value of the given time.Duration value.</p>
+<pre tabindex="0"><code>{{ $d := time.ParseDuration &#34;-3h&#34; }}
+{{ $d.Abs }} → 3h0m0s
+</code></pre><p>output:3h0m0s</p>
+<hr>
+<h1 id="hours">Hours</h1>
+<p>Returns the time.Duration value as a floating point number of hours.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+{{ $d.Hours }} → 3.5420833333333333
+</code></pre><p>3.5h → 12,600 seconds</p>
+<p>2.5m → 150 seconds</p>
+<p>1.5s → 1.5 seconds</p>
+<p>→ Total = 12,600 + 150 + 1.5 = 12,751.5 seconds</p>
+<p>12,751.5 seconds ÷ 3600 seconds/hour = 3.542083333&hellip; hours</p>
+<hr>
+<h1 id="microseconds">Microseconds</h1>
+<p>Returns the time.Duration value as an integer microsecond count.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+
+{{ $d.Microseconds }} → 12751500000
+</code></pre><p>3.5h → 12,600 seconds</p>
+<p>2.5m → 150 seconds</p>
+<p>1.5s → 1.5 seconds</p>
+<p>→ Total = 12,600 + 150 + 1.5 = 12,751.5 seconds</p>
+<p>12,751.5<em>1000</em>1000=12751500000</p>
+<hr>
+<h1 id="milliseconds">Milliseconds</h1>
+<p>Returns the time.Duration value as an integer millisecond count.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+{{ $d.Milliseconds }} → 12751500
+</code></pre><p>3.5h → 12,600 seconds</p>
+<p>2.5m → 150 seconds</p>
+<p>1.5s → 1.5 seconds</p>
+<p>→ Total = 12,600 + 150 + 1.5 = 12,751.5 seconds</p>
+<p>12,751.5*1000=12751500</p>
+<hr>
+<h1 id="minutes">Minutes</h1>
+<p>Returns the time.Duration value as a floating point number of minutes.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+{{ $d.Minutes }} → 212.525
+</code></pre><p>3.5h → 12,600 seconds</p>
+<p>2.5m → 150 seconds</p>
+<p>1.5s → 1.5 seconds</p>
+<p>→ Total = 12,600 + 150 + 1.5 = 12,751.5 seconds</p>
+<p>12,751.5/60=212.525</p>
+<hr>
+<h1 id="nanoseconds">Nanoseconds</h1>
+<p>Returns the time.Duration value as an integer nanosecond count.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+{{ $d.Nanoseconds }} → 12751500000000
+</code></pre><p>3.5h → 12,600 seconds</p>
+<p>2.5m → 150 seconds</p>
+<p>1.5s → 1.5 seconds</p>
+<p>→ Total = 12,600 + 150 + 1.5 = 12,751.5 seconds</p>
+<p>12,751.5*1000*1000*1000=12751500000000</p>
+<hr>
+<h1 id="round">Round</h1>
+<p>Returns the result of rounding DURATION1 to the nearest multiple of DURATION2.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+
+{{ $d.Round (time.ParseDuration &#34;2h&#34;) }} → 4h0m0s
+{{ $d.Round (time.ParseDuration &#34;3m&#34;) }} → 3h33m0s
+{{ $d.Round (time.ParseDuration &#34;4s&#34;) }} → 3h32m32s
+</code></pre><h1 id="seconds">Seconds</h1>
+<p>Returns the time.Duration value as a floating point number of seconds.</p>
+<pre tabindex="0"><code>Seconds
+Returns the time.Duration value as a floating point number of seconds.
+</code></pre><hr>
+<h1 id="truncate">Truncate</h1>
+<p>Returns the result of rounding DURATION1 toward zero to a multiple of DURATION2.</p>
+<pre tabindex="0"><code>{{ $d = time.ParseDuration &#34;3.5h2.5m1.5s&#34; }}
+
+{{ $d.Truncate (time.ParseDuration &#34;2h&#34;) }} → 2h0m0s
+{{ $d.Truncate (time.ParseDuration &#34;3m&#34;) }} → 3h30m0s
+{{ $d.Truncate (time.ParseDuration &#34;4s&#34;) }} → 3h32m28s
+</code></pre>
+
+
+        </main>
+</body>
+</html>

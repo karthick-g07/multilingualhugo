@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Einführung on My New Hugo Site</title>
+    <link>http://localhost:1313/de/tags/einf%C3%BChrung/</link>
+    <description>Recent content in Einführung on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/tags/einf%C3%BChrung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mein erster Blogbeitrag</title>
+      <link>http://localhost:1313/de/blog/post1/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/post1/</guid>
+      <description>&lt;h2 id=&#34;willkommen&#34;&gt;Willkommen&lt;/h2&gt;&#xA;&lt;p&gt;Willkommen zu meinem allerersten Blogbeitrag! Ich freue mich darauf, hier meine Gedanken und Erfahrungen zu teilen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-sie-erwarten-können&#34;&gt;Was Sie erwarten können&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tutorials und Anleitungen&lt;/li&gt;&#xA;&lt;li&gt;Persönliche Geschichten und gelernte Lektionen&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;bleiben-sie-dran&#34;&gt;Bleiben Sie dran&lt;/h2&gt;&#xA;&lt;p&gt;Vielen Dank für Ihren Besuch.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

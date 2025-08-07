@@ -1,0 +1,113 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+enableEmoji = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+
+  [languages.en]
+  languageName = "English"
+  languageCode = "en-US"
+  contentDir = "content/english"
+  weight = 1
+
+    [[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+    [[languages.en.menu.main]]
+    name = "Duration"
+    url = "/duration/"
+    weight = 10
+
+    [[languages.en.menu.main]]
+    name = "blog"
+    url = "/blog/"
+    weight = 2
+    pre = ":arrow_left:"
+    post = ":point_right:"
+
+    [[languages.en.menu.main]]
+    name = "Post 1"
+    url = "/blog/post1/"
+    parent = "blog"
+    weight = 3
+
+    [[languages.en.menu.main]]
+    name = "Post 2"
+    url = "/blog/post2/"
+    parent = "blog"
+    weight = 4
+
+  [languages.de]
+  languageName = "German"
+  languageCode = "de-AT"
+  contentDir = "content/german"
+  weight = 2
+
+    [[languages.de.menu.main]]
+    name = "Über"
+    url = "/about/"
+    weight = 1
+
+    [[languages.de.menu.main]]
+    name = "Dauer"
+    url = "/duration/"
+    weight = 10
+
+    [[languages.de.menu.main]]
+    name = "blog"
+    url = "/blog/"
+    weight = 2
+    pre = ":arrow_left:"
+    post = ":point_right:"
+
+    [[languages.de.menu.main]]
+    name = "Beitrag 1"
+    url = "/blog/post1/"
+    parent = "blog"
+    weight = 3
+
+    [[languages.de.menu.main]]
+    name = "Beitrag 2"
+    url = "/blog/post2/"
+    parent = "blog"
+    weight = 4
+
+  [languages.fr]
+  languageName = "Français"
+  languageCode = "fr-FR"
+  contentDir = "content/french"
+  weight = 3
+
+    [[languages.fr.menu.main]]
+    name = "À propos"
+    url = "/about/"
+    weight = 1
+
+    [[languages.fr.menu.main]]
+    name = "Durée"
+    url = "/duration/"
+    weight = 10
+
+    [[languages.fr.menu.main]]
+    name = "blog"
+    url = "/blog/"
+    weight = 2
+    pre = ":arrow_left:"
+    post = ":point_right:"
+
+    [[languages.fr.menu.main]]
+    name = "Article 1"
+    url = "/blog/post1/"
+    parent = "blog"
+    weight = 3
+
+    [[languages.fr.menu.main]]
+    name = "Article 2"
+    url = "/blog/post2/"
+    parent = "blog"
+    weight = 4

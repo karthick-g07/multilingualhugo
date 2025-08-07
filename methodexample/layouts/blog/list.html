@@ -1,0 +1,13 @@
+{{ define "main" }}
+ <link rel="stylesheet" href="{{ "css/header.css" | relURL }}">
+  <h1>Blog Posts</h1>
+  <ul>
+    {{ range .RegularPages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+        <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+        <p>{{ .Summary }}</p>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

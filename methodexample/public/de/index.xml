@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Über on My New Hugo Site</title>
+    <link>http://localhost:1313/de/</link>
+    <description>Recent content in Über on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>de-AT</language>
+    <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mein erster Blogbeitrag</title>
+      <link>http://localhost:1313/de/blog/post1/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/post1/</guid>
+      <description>&lt;h2 id=&#34;willkommen&#34;&gt;Willkommen&lt;/h2&gt;&#xA;&lt;p&gt;Willkommen zu meinem allerersten Blogbeitrag! Ich freue mich darauf, hier meine Gedanken und Erfahrungen zu teilen.&lt;/p&gt;&#xA;&lt;h2 id=&#34;was-sie-erwarten-können&#34;&gt;Was Sie erwarten können&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tutorials und Anleitungen&lt;/li&gt;&#xA;&lt;li&gt;Persönliche Geschichten und gelernte Lektionen&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;bleiben-sie-dran&#34;&gt;Bleiben Sie dran&lt;/h2&gt;&#xA;&lt;p&gt;Vielen Dank für Ihren Besuch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mein zweiter Blogbeitrag</title>
+      <link>http://localhost:1313/de/blog/post2/</link>
+      <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/blog/post2/</guid>
+      <description>&lt;h2 id=&#34;einführung&#34;&gt;Einführung&lt;/h2&gt;&#xA;&lt;p&gt;Dies ist die Einführung zu meinem zweiten Blogbeitrag. Hier teile ich einige interessante Einblicke.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hauptinhalt&#34;&gt;Hauptinhalt&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Erster Punkt zum Thema.&lt;/li&gt;&#xA;&lt;li&gt;Zweiter Punkt mit weiteren Details.&lt;/li&gt;&#xA;&lt;li&gt;Dritter Punkt zum Abschluss.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;fazit&#34;&gt;Fazit&lt;/h2&gt;&#xA;&lt;p&gt;Vielen Dank fürs Lesen! Bleiben Sie dran für mehr.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lerne über Dauer</title>
+      <link>http://localhost:1313/de/duration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/duration/</guid>
+      <description>&lt;h1 id=&#34;abs&#34;&gt;Abs&lt;/h1&gt;&#xA;&lt;p&gt;Gibt den absoluten Wert des angegebenen time.Duration-Werts zurück.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{ $d := time.ParseDuration &amp;#34;-3h&amp;#34; }}&#xD;&#xA;{{ $d.Abs }} → 3h0m0s&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Ausgabe: 3h0m0s&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;stunden&#34;&gt;Stunden&lt;/h1&gt;&#xA;&lt;p&gt;Gibt den time.Duration-Wert als Fließkommazahl in Stunden zurück.&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{ $d = time.ParseDuration &amp;#34;3.5h2.5m1.5s&amp;#34; }}&#xD;&#xA;{{ $d.Hours }} → 3.5420833333333333&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3,5h → 12.600 Sekunden&lt;br&gt;&#xA;2,5m → 150 Sekunden&lt;br&gt;&#xA;1,5s → 1,5 Sekunden&lt;br&gt;&#xA;→ Gesamt = 12.600 + 150 + 1,5 = 12.751,5 Sekunden&lt;br&gt;&#xA;12.751,5 Sekunden ÷ 3600 Sekunden/Stunde = 3,542083333&amp;hellip; Stunden&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Über</title>
+      <link>http://localhost:1313/de/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/about/</guid>
+      <description>&lt;p&gt;Dies ist die Über-Seite&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
